@@ -1,0 +1,10 @@
+{
+  "routes": [
+    "/",
+    "/date",
+    "/food",
+    "/pics",
+    "/venue",
+    "/videos"
+  ]
+}

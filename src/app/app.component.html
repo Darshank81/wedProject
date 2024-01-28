@@ -1,0 +1,29 @@
+<mat-drawer-container autosize style="background-color: #1c001d;">
+  <mat-drawer #drawer opened="true" mode="side">
+      <mat-nav-list class="mat-elevation-z20" style="position: fixed; overflow:auto;min-height: 100vh; background: linear-gradient(to bottom, #002842, #510053);">
+        <mat-list-item routerLink="/">
+          <button mat-icon-button><mat-icon routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" ariaCurrentWhenActive="page" color="accent">home</mat-icon></button>
+        </mat-list-item>
+        <mat-list-item routerLink="/date">
+          <button mat-icon-button><mat-icon routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" ariaCurrentWhenActive="page" color="accent">event</mat-icon></button>
+        </mat-list-item>
+        <mat-list-item routerLink="/venue">
+          <button mat-icon-button><mat-icon routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" ariaCurrentWhenActive="page" color="accent">place</mat-icon></button>
+        </mat-list-item>
+        <mat-list-item routerLink="/food">
+          <button mat-icon-button><mat-icon routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" ariaCurrentWhenActive="page" color="accent">restaurant_menu</mat-icon></button>
+        </mat-list-item>
+        <mat-list-item routerLink="/pics">
+          <button mat-icon-button><mat-icon routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" ariaCurrentWhenActive="page" color="accent">image</mat-icon></button>
+        </mat-list-item>
+        <mat-list-item routerLink="/videos">
+          <button mat-icon-button><mat-icon routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" ariaCurrentWhenActive="page" color="accent">play_arrow</mat-icon></button>
+        </mat-list-item>
+      </mat-nav-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <div style="text-align: center;">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>
